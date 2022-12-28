@@ -1,0 +1,27 @@
+.contacts{
+    border: 1px solid;
+
+    max-width: 100%;
+    border: 1px solid;
+    text-align: center;
+    background: rgb(187, 141, 51);
+}
+
+.container{
+    border: 1px solid;
+    max-width: 1180px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.form{
+    margin: 0 auto;
+  
+}
+
+input, textarea {
+    margin: 20px auto;
+    display: block;
+    width: 80%;
+    max-width: 500px;
+}

@@ -1,0 +1,9 @@
+
+
+.navigation{
+    width: 400px;
+ justify-content: space-between;
+    display: flex;
+    align-self: center;
+    border: 1px solid;
+}
