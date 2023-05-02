@@ -1,14 +1,21 @@
-import css from './Skill.module.css'
+import css from './Skill.module.scss'
 import React from 'react';
 
 
 
 export const Skill = (props) => {
+    // debugger
     return (
         <div className={css.skill}>
-            <div className={css.logo}></div>
+            <img className={css.image} src={props.image}/>
             <h3>{props.title}</h3>
-            <div className={css.description}>{props.description}</div>
+            {/*<div className={css.description}>{props.description}</div>*/}
+        <ul>{props.skillsList.map(el => {
+// debugger
+            return (<li>{el}</li>)
+        })
+        }
+        </ul>
         </div>
 
     )

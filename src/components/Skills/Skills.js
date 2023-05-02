@@ -1,20 +1,51 @@
-import css from './Skills.module.css'
+import classes from './Skills.module.css'
 import React from 'react';
-import { Skill } from '../Skill/Skill';
+import {Skill} from '../Skill/Skill';
+import css from '../../img/skills/css.svg'
+import api from '../../img/skills/api.svg'
+import js from '../../img/skills/js.svg'
+import ts from '../../img/skills/ts.svg'
+import redux from '../../img/skills/redux.svg'
+import react from '../../img/skills/react.svg'
+import {Title} from "../Title/Title";
 
-let skillsProps = [{title:"React", decription:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore recusandae laudantium nesciunt error ab fugiat dolores, odit vero aperiam fugit?"}
-,{title:"JS", decription:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim doloremque sequi a optio. Aliquam, ipsa recusandae? Cum rem in pariatur incidunt non corrupti aut! Illo sed facere ducimus, quod voluptates natus voluptatum laudantium quisquam dolores!"},
-{title:"CSS", decription:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis debitis non id iste quos explicabo repudiandae, recusandae eum deserunt quasi, veritatis labore nihil officia autem eos impedit eligendi. Voluptate quod deserunt delectus reprehenderit odit adipisci vitae, aliquam repudiandae magni in tempore libero officiis quos eveniet!"},
-{title:"TS", decription:"Lorem ipsum dolor sit amet consectetur"}]
+let skillsProps = [{
+    title: "React",
+    decription: "Lorem ipsum",
+    image: react,
+    skillsList: ['Function components', 'Class components', 'HOC', 'React router DOM', 'Hooks']
+}, {
+    title: "JS",
+    decription: " dolores!",
+    image: js,
+    skillsList: ['ECMAScript 6', 'DOM', 'Closure', 'Promise', 'Event loop']
+}, {title: "REST API",
+    decription: " dolores!",
+    image: api, skillsList: ['HTTP', 'CRUD', 'AXIOS']},
+    {
+    title: "REDUX",
+        decription: " dolores!",
+        image: redux,
+        skillsList: ['RTK', 'Thunk', 'FLUX']
+}, {
+    title: "HTML/CSS",
+    decription: " quos eveniet!",
+    image: css,
+    skillsList: ['Semantics', 'Adaptive', 'Flexbox/Grid', 'BEM', 'SASS']
+}, {
+    title: "TS",
+    decription: "Lorem ipsum dolor sit amet consectetur",
+    image: ts,
+    skillsList: ['generics', 'interface', 'type']
+}]
 
 export const Skills = () => {
-    return (
-        <div className={css.skills}>
-            <h2>My skills</h2>
-            <div className={css.container}>
-                {skillsProps.map(el=>{
-                    return(
-                        <Skill title={el.title} description={el.decription}/>
+    return (<div className={classes.skills}>
+            <Title title={'My skills'}/>
+            <div className={classes.container}>
+                {skillsProps.map(el => {
+                    return (<Skill title={el.title} description={el.decription} image={el.image}
+                                   skillsList={el.skillsList}/>
 
                     )
                 })}
