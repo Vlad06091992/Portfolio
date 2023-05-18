@@ -1,4 +1,4 @@
-import css from './Main.module.css'
+import css from './Main.module.scss'
 import React from 'react';
 
 
@@ -8,7 +8,7 @@ export const Main = () => {
         <div className={css.main}>
             <div className={css.container}>
                <div className={css.ava}>
-                   <img  alt='ava' src="http://placehold.it/150x150/" />
+                   <img  alt='ava' src="http://placehold.it/300x300/" />
 
                </div>
 

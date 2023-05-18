@@ -5,23 +5,20 @@
     max-width: 1325px;
     width: 80%;
     margin: auto;
-    /*display: flex;*/
-    /*justify-content: space-between;*/
-    /*align-items: center;*/
 }
 
 .main {
-    padding: 195px 0px 182px 0px;
+    padding: 100px 0px 182px 0px;
     background: rgb(41,45,60);
     /*border: 1px solid;*/
     min-height: 100vh;
-    margin-top: 80px;
+    //margin-top: 80px;
 }
 
 .ava{
     margin: 0 auto;
     margin-bottom: 48px;
-    max-width: 150px;
+    max-width: 300px;
 }
 
 .ava img{
@@ -35,6 +32,9 @@
     margin: 0 auto;
     font-size: 90px;
     font-weight: 700;
+    @media screen and (max-width: 500px) {
+        font-size: 60px;
+    }
 }
 
 

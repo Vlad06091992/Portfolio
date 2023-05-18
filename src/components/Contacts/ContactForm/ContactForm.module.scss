@@ -1,0 +1,64 @@
+.contacts {
+  background: #F2F5FB;
+  max-width: 100%;
+  text-align: center;
+
+  .wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    .myContacts {
+      width: 400px;
+
+      ul {
+        padding: 0;
+
+        li {
+          max-width: 100%;
+          display: block;
+          list-style: none;
+          background: white;
+          margin: 20px;
+        }
+      }
+
+
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
+    }
+
+    .contactMe {
+      width: 400px;
+
+      .form {
+        p {
+          margin: 0 auto;
+          text-align: left;
+        }
+      }
+
+      input, textarea {
+        max-width: 100%;
+        padding: 10px 20px;
+        display: block;
+        width: 100%;
+        border: none;
+      }
+    }
+  }
+
+  button{
+    background: #063148;
+    color:white;
+   border: none;
+    border-radius: 5px;
+    margin: 20px auto;
+    float: right;
+    font: inherit;
+  }
+
+}
+
