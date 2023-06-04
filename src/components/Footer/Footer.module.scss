@@ -1,8 +1,10 @@
 .footer{
+    margin: auto;
+padding: 10px;
     color: #FFFFFF;
     line-height: 0;
     text-align: center;
-    background: #063148
+    background: #063148;
 }
 
 h2{
@@ -10,6 +12,18 @@ h2{
 }
 
 .logo{
-    max-width: 100px;
+    margin: 0 5px;
+    width: 32px;
     height: auto;
+}
+
+.logo:hover{
+    fill:#44CBE1;
+}
+
+.name{
+    color: white;
+    font-family: "Permanent Marker", cursive;
+    font-size: 29px;
+    text-align: center;
 }

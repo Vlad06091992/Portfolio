@@ -15,6 +15,8 @@ export const Footer = () => {
             <img className={style.logo} src={Telegram} alt="LinkedIn" />
             <img className={style.logo} src={CV} alt="LinkedIn" />
             <img className={style.logo} src={Codewars} alt="LinkedIn" />
+            <p className={style.name}>Vladislav Smirnov</p>
         </div>
+
     );
 }
