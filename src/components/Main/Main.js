@@ -1,5 +1,6 @@
 import css from './Main.module.scss'
 import React from 'react';
+import photo from '../../assets/photo.jpg'
 
 
 
@@ -8,7 +9,7 @@ export const Main = () => {
         <div className={css.main}>
             <div className={css.container}>
                <div className={css.ava}>
-                   <img  alt='ava' src="http://placehold.it/300x300/" />
+                   <img  alt='ava' src={photo} />
 
                </div>
 

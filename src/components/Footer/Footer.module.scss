@@ -1,29 +1,30 @@
-.footer{
-    margin: auto;
-padding: 10px;
-    color: #FFFFFF;
-    line-height: 0;
-    text-align: center;
-    background: #063148;
+.footer {
+  margin: auto;
+  padding: 10px;
+  color: #FFFFFF;
+  line-height: 0;
+  text-align: center;
+  background: #063148;
 }
 
-h2{
-    margin-bottom: 2em;
+h2 {
+  margin-bottom: 2em;
 }
 
-.logo{
-    margin: 0 5px;
-    width: 32px;
-    height: auto;
+.logo {
+  fill: white;
+  margin: 0 5px;
+  width: 32px;
+  height: auto;
 }
 
-.logo:hover{
-    fill:#44CBE1;
+.logo:hover {
+  fill: #44CBE1;
+  cursor: pointer;
 }
 
-.name{
-    color: white;
-    font-family: "Permanent Marker", cursive;
-    font-size: 29px;
-    text-align: center;
+.name {
+  font-family: "Permanent Marker", cursive;
+  font-size: 29px;
+  text-align: center;
 }
