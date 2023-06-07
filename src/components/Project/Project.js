@@ -2,18 +2,15 @@ import css from './Project.module.css'
 import React from 'react';
 
 
-
 export const Project = (props) => {
 
     const src = props.image
-    // debugger
 
     return (
         <div className={css.project}>
-            <button className={css.button}>view</button>
-
-
-
+            <a target={'_blank'} href={props.link}>
+                <button className={css.button}>view</button>
+            </a>
             {/*<img className={css.image} src={`..${src}`}></img>*/}
             <img className={css.image} src={src}></img>
             <h3>{props.title}</h3>

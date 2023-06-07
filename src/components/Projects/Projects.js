@@ -3,32 +3,37 @@ import React from 'react';
 import {Project} from '../Project/Project'
 import {Title} from "../Title/Title";
 import petProjects from '../../assets/projects/pet_projects.png'
-import counter  from '../../assets/projects/counter.png'
+import counter from '../../assets/projects/counter.png'
 import socialNetwork from '../../assets/projects/social_network.jpg'
 import todolist from '../../assets/projects/todolist.webp'
 
 
-
 let jobsProps = [{
     title: "Social network",
-   image:socialNetwork
+    image: socialNetwork,
+    link: 'https://github.com/Vlad06091992/SocialNetwork-react-typescript'
 }, {
     title: "Todolist",
-    image:todolist
+    image: todolist,
+    link: 'https://github.com/Vlad06091992/ToDoLIst-react-typescript'
 
 }, {
     title: "Custom counter",
-    image: counter
-}, {title: "Pet projects native JS",
-   image: petProjects
+    image: counter,
+    https:'https://github.com/Vlad06091992/react-counter'
+}, {
+    title: "Pet projects native JS",
+    image: petProjects,
+    link:'https://github.com/Vlad06091992/pet-projects-native-js'
 },]
 
 export const Projects = () => {
     return (<div className={css.projects}>
             <Title title={"My projects"}/>
             <div className={css.container}>
-                {jobsProps.map(el => {
-                    return (<Project image={el.image} title={el.title} description={el.decription}/>
+                {jobsProps.map((el, index) => {
+                    return (<Project key={index} image={el.image} title={el.title} description={el.decription}
+                                     link={el.link}/>
 
                     )
                 })}
