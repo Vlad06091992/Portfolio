@@ -1,12 +1,17 @@
 import css from './Main.module.scss'
 import React from 'react';
 import photo from '../../assets/photo.jpg'
+import {Particle} from "../../common/components/Particle/Particle";
+import Slide from "react-reveal/Slide";
 
 
 
 export const Main = () => {
     return (
         <div className={css.main}>
+
+            <Particle/>
+            <Slide>
             <div className={css.container}>
                <div className={css.ava}>
                    <img  alt='ava' src={photo} />
@@ -22,6 +27,7 @@ export const Main = () => {
                     <p>computer programmer, who loves to code in JS</p>
                 </div>
             </div>
+            </Slide>
         </div>
 
     )

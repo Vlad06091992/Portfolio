@@ -8,7 +8,7 @@ import ts from '../../img/skills/ts.svg'
 import redux from '../../img/skills/redux.svg'
 import react from '../../img/skills/react.svg'
 import {Title} from "../../common/components/Title/Title";
-
+import Slide from "react-reveal/Slide";
 let skillsProps = [{
     title: "React",
     description: "Lorem ipsum",
@@ -42,6 +42,7 @@ let skillsProps = [{
 export const Skills = () => {
     return (<div className={styles.skills}>
             <Title title={'My skills'}/>
+            <Slide right>
             <div className={styles.container}>
                 {skillsProps.map(el => {
                     return (<Skill title={el.title} description={el.description} image={el.image}
@@ -50,6 +51,7 @@ export const Skills = () => {
                     )
                 })}
             </div>
+            </Slide>
         </div>
 
     )

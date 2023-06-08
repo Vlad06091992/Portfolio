@@ -6,6 +6,7 @@ import petProjects from '../../assets/projects/pet_projects.png'
 import counter from '../../assets/projects/counter.png'
 import socialNetwork from '../../assets/projects/social_network.jpg'
 import todolist from '../../assets/projects/todolist.webp'
+import Slide from "react-reveal/Slide";
 
 
 let projectsProps = [{
@@ -30,6 +31,7 @@ let projectsProps = [{
 export const Projects = () => {
     return (<div className={css.projects}>
             <Title title={"My projects"}/>
+            <Slide left>
             <div className={css.container}>
                 {projectsProps.map((el, index) => {
                     return (<Project key={index} image={el.image} title={el.title} description={el.decription}
@@ -38,6 +40,7 @@ export const Projects = () => {
                     )
                 })}
             </div>
+            </Slide>
         </div>
 
     )

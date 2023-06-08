@@ -10,7 +10,7 @@
 
   .container {
     @include container;
-    @include flex(space-around, baseline);
+    @include flex(space-around, self-start);
 
     .myContacts {
       width: 400px;
@@ -62,6 +62,7 @@
     margin: 20px auto;
     float: right;
     font: inherit;
+    padding: 15px;
     &:hover{
       cursor: pointer;
     }
