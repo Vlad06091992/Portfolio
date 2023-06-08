@@ -1,19 +1,14 @@
-.projects {
-    background-color: rgb(242 245 251);
-.container {
-    justify-content: space-evenly;
-    display: flex;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    max-width: 1325px;
-    width: 80%;
-    margin: 0 auto;
-    height: 100%;
-}
+@import "src/common/styles/sass/mixins";
+@import "src/common/styles/sass/variables";
 
-.projects h2 {
-    text-align: center;
-}
+.projects {
+  background-color: $projectsAndSkillsBgColor;
+
+  .container {
+    @include flex(space-evenly, flex-start);
+    @include container;
+    height: 100%;
+  }
 }
 
 

@@ -1,4 +1,4 @@
-import css from './Project.module.css'
+import styles from './Project.module.scss'
 import React from 'react';
 
 
@@ -7,21 +7,21 @@ export const Project = (props) => {
     const src = props.image
 
     return (
-        <div className={css.project}>
+        <div className={styles.project}>
             <a target={'_blank'} href={props.link}>
-                <button className={css.button}>view</button>
+                <button className={styles.button}>view</button>
             </a>
             {/*<img className={css.image} src={`..${src}`}></img>*/}
-            <img className={css.image} src={src}></img>
+            <img className={styles.image} src={src}></img>
             <h3>{props.title}</h3>
-            <div className={css.description}>{props.description}</div>
+            <div className={styles.description}>{props.description}</div>
         </div>
 
     )
 }
 
 
-// import css from './Project.module.css'
+// import css from './Project.module.scss'
 // import React from 'react';
 //
 //

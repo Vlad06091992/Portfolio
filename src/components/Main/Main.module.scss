@@ -1,65 +1,61 @@
-.container {
-    /*border: 1px solid;*/
-    height: 100%;
-    flex-wrap: wrap;
-    max-width: 1325px;
-    width: 80%;
-    margin: auto;
-}
+@import "src/common/styles/sass/variables";
+@import "src/common/styles/sass/mixins";
+
 
 .main {
-    padding: 100px 0px 182px 0px;
-    background: rgb(41,45,60);
-    /*border: 1px solid;*/
-    min-height: 100vh;
-    //margin-top: 80px;
-}
+  padding: 100px 0px 182px 0px;
+  min-height: 100vh;
+  background: $mainBgColor;
 
-.ava{
-    margin: 0 auto;
-    margin-bottom: 48px;
-    max-width: 300px;
-}
+  .container {
+    @include container();
 
-.ava img{
-    max-width: 100%;
-    border-radius: 50%;
-}
-
-.name{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 0 auto;
-    font-size: 90px;
-    font-weight: 700;
-    @media screen and (max-width: 500px) {
-        font-size: 60px;
+    .ava {
+      margin: 0 auto 48px;
+      max-width: 300px;
     }
+
+    .ava img {
+      max-width: 100%;
+      border-radius: 50%;
+    }
+
+    .text {
+      text-align: center;
+      color: $textColor;
+      max-width: 930px;
+      margin: 0 auto;
+      font-size: 36px;
+
+      & h2, & p {
+        font-size: 24px;
+      }
+
+      .name {
+        @include flex(center,center);
+        margin: 0 auto;
+        font-size: 90px;
+        font-weight: 700;
+        @media screen and (max-width: 500px) {
+          font-size: 60px;
+        }
+        .lastname {
+          background: #44CBE1;
+        }
+      }
+    }
+  }
 }
 
 
 
-.lastname{
-    background: #44CBE1;
-}
-
-.text {
-    text-align: center;
-    color:white;
-    max-width: 930px;
-    margin: 0 auto;
-    font-size: 36px;
-}
-
-.text h2,.text p  {
-    font-size: 24px;
-}
 
 
-.photo {
-    border: 1px solid;
-    width: 300px;
-    height: 400px;
-    background: olive;
-}
+
+
+
+
+
+
+
+

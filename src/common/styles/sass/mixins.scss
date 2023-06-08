@@ -1,0 +1,12 @@
+@mixin container(){
+  max-width: 1325px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+@mixin flex($justifyContent,$alignItems){
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:$justifyContent;
+  align-items: $alignItems;
+}

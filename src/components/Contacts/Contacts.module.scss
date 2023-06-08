@@ -1,12 +1,16 @@
+@import "../../common/styles/sass/variables";
+@import "../../common/styles/sass/mixins";
+
+
 .contacts {
-  background: #F2F5FB;
+
+  background: $projectsAndSkillsBgColor;
   max-width: 100%;
   text-align: center;
 
-  .wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+  .container {
+    @include container;
+    @include flex(space-around, baseline);
 
     .myContacts {
       width: 400px;
@@ -18,7 +22,7 @@
           max-width: 100%;
           display: block;
           list-style: none;
-          background: white;
+          background: $textColor;
           margin: 20px;
         }
       }
@@ -50,15 +54,18 @@
     }
   }
 
-  button{
-    background: #063148;
-    color:white;
-   border: none;
+  button {
+    background: $headerAndFooterBgColor;
+    color: $textColor;
+    border: none;
     border-radius: 5px;
     margin: 20px auto;
     float: right;
     font: inherit;
+    &:hover{
+      cursor: pointer;
+    }
   }
 
-}
 
+}

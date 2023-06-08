@@ -1,0 +1,32 @@
+.project {
+  position: relative;
+  max-width: 100%;
+  text-align: center;
+  height: 100%;
+  margin: 10px;
+
+  .button {
+    position: absolute;
+    z-index: 9;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -120%);
+    padding: 15px;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  .image {
+    max-width: 280px;
+    height: 100%;
+    border-radius: 20px;
+  }
+}
+
+
+
+
+
+

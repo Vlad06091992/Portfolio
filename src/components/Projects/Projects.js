@@ -1,14 +1,14 @@
 import css from './Projects.module.scss'
 import React from 'react';
 import {Project} from '../Project/Project'
-import {Title} from "../Title/Title";
+import {Title} from "../../common/components/Title/Title";
 import petProjects from '../../assets/projects/pet_projects.png'
 import counter from '../../assets/projects/counter.png'
 import socialNetwork from '../../assets/projects/social_network.jpg'
 import todolist from '../../assets/projects/todolist.webp'
 
 
-let jobsProps = [{
+let projectsProps = [{
     title: "Social network",
     image: socialNetwork,
     link: 'https://github.com/Vlad06091992/SocialNetwork-react-typescript'
@@ -31,7 +31,7 @@ export const Projects = () => {
     return (<div className={css.projects}>
             <Title title={"My projects"}/>
             <div className={css.container}>
-                {jobsProps.map((el, index) => {
+                {projectsProps.map((el, index) => {
                     return (<Project key={index} image={el.image} title={el.title} description={el.decription}
                                      link={el.link}/>
 

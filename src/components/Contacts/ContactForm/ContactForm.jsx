@@ -1,4 +1,4 @@
-import styles from "./ContactForm.module.scss";
+import styles from "../Contacts.module.scss";
 import React, {useState} from "react";
 
 export const ContactForm = () => {

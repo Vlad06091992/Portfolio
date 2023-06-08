@@ -1,4 +1,4 @@
-import styles from "../ContactForm/ContactForm.module.scss";
+import styles from "../Contacts.module.scss";
 import React from "react";
 
 export const MyContacts = () => {
