@@ -1,20 +1,27 @@
-.navigation{
+.navigation {
     width: 400px;
- justify-content: space-between;
+    justify-content: space-between;
     display: flex;
     align-self: center;
     /*border: 1px solid;*/
 }
 
-.navigation a{
-    color:#FFFFFF;
-    font-weight:700;
+.navigation .link {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-weight: 700;
     font-size: 18px;
     font-style: normal;
     text-transform: capitalize;
     line-height: 1.5;
 }
 
-.navigation a.active{
+.navigation .link.active {
+    color: #44CBE1
+}
+
+.link:hover {
+    cursor: pointer;
     color:#44CBE1
-    }
+}
+

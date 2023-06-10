@@ -1,3 +1,10 @@
 *{
     box-sizing: border-box;
 }
+
+.up{
+    z-index: 10;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+}

@@ -29,7 +29,7 @@ let projectsProps = [{
 },]
 
 export const Projects = () => {
-    return (<div className={css.projects}>
+    return (<div id={'projects'} className={css.projects}>
             <Title title={"My projects"}/>
             <Slide left>
             <div className={css.container}>
@@ -40,6 +40,7 @@ export const Projects = () => {
                     )
                 })}
             </div>
+
             </Slide>
         </div>
 

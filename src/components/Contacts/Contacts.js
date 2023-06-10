@@ -8,14 +8,12 @@ import Swing from "react-reveal/Swing";
 
 export const Contacts = () => {
     return (
-        <div className={styles.contacts}>
+        <div id={'contacts'} className={styles.contacts}>
             <Title title={'Contacts'}/>
             <div className={styles.container}>
-                <Swing >
                 <MyContacts/>
                 <ContactForm/>
-                </Swing>
             </div>
-    </div>
+        </div>
     )
 }

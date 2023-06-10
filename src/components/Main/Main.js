@@ -3,6 +3,12 @@ import React from 'react';
 import photo from '../../assets/photo.jpg'
 import {Particle} from "../../common/components/Particle/Particle";
 import Slide from "react-reveal/Slide";
+import {ReactComponent as Github} from "../../assets/socialMedia/github.svg";
+import {ReactComponent as Telegram} from "../../assets/socialMedia/telegram.svg";
+import {ReactComponent as Codewars} from "../../assets/socialMedia/codewars.svg";
+import {ReactComponent as CV} from "../../assets/socialMedia/cv.svg";
+import {ReactComponent as Linkedin} from "../../assets/socialMedia/linkedin.svg";
+import ReactTypingEffect from 'react-typing-effect';
 
 
 
@@ -24,9 +30,26 @@ export const Main = () => {
                         <div>Vladislav</div>
                         <div className={css.lastname}>Smirnov</div>
                     </div>
-                    <p>computer programmer, who loves to code in JS</p>
+<p>A programmer who loves coding in <ReactTypingEffect speed={100} text={["React", "Javascript", "Typescript"]}/></p>
+                    <div className={css.socialMedia}>
+                        <div className={css.stripe}></div>
+                        <a target={'_blank'} href={'https://github.com/Vlad06091992'}>
+                            <Github className={css.logo}/>
+                        </a>
+                        <a target={'_blank'} href={'https://t.me/Vlad_VS92'}>
+                            <Telegram className={css.logo}/>
+                        </a>
+                        <a target={'_blank'} href={'https://www.codewars.com/users/Vlad06091992'}>
+                            <Codewars className={css.logo}/>
+                        </a>
+                        <a target={'_blank'} href={'https://drive.google.com/file/d/12YoCv6BSrw9FSgJpg_pDwlYIqSjXZwrk/view'}>
+                            <CV className={css.logo}/>
+                        </a>
+
+                    </div>
                 </div>
             </div>
+
             </Slide>
         </div>
 

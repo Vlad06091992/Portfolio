@@ -40,7 +40,7 @@ let skillsProps = [{
 }]
 
 export const Skills = () => {
-    return (<div className={styles.skills}>
+    return (<div id={'skills'} className={styles.skills}>
             <Title title={'My skills'}/>
             <Slide right>
             <div className={styles.container}>
