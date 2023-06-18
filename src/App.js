@@ -16,7 +16,7 @@ export function App() {
             <Main/>
             <Projects/>
             <Skills/>
-            <Contacts/>
+            {/*<Contacts/>*/}
             <Footer/>
             <ScrollToTop smooth color="#44CBE1" />
         </div>
