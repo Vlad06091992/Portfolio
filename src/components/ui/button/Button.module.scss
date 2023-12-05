@@ -1,0 +1,16 @@
+.button{
+  color: rgb(242, 245, 251);
+  margin: 10px;
+  background: #44CBE1;
+  padding: 5px;
+  border-radius: 3px;
+  border: none;
+  &:hover{
+    cursor: pointer;
+    filter : brightness(105%);
+  }
+
+  &:active{
+
+  }
+}
