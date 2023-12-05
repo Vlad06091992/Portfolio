@@ -9,11 +9,11 @@ export const Project = (props) => {
         <div className={styles.project}>
             <h3>{props.title}</h3>
             <div className={styles.linkButtons}>
-            <div>
-                <a target={'_blank'} href={props.linkToVercel}>
-                    <Button description={'Link to vercel'}></Button>
+                {props.linkToDeploy &&  <div>
+                <a target={'_blank'} href={props.linkToDeploy}>
+                    <Button description={'Deployed Application'}></Button>
                 </a>
-            </div>
+            </div>}
             <div>
                 <a target={'_blank'} href={props.linkFrontend}>
                     <Button description={'Link to Github'}></Button>
@@ -48,20 +48,5 @@ export const Project = (props) => {
 }
 
 
-// import css from './Project.module.scss'
-// import React from 'react';
-//
-//
-//
-// export const Project = (props) => {
-//     return (
-//         <div className={css.job}>
-//             <div style={props.style } className={css.logo}><Button.jsx>view</Button.jsx></div>
-//             <h3>{props.title}</h3>
-//             <div className={css.description}>{props.description}</div>
-//         </div>
-//
-//     )
-// }
 
 

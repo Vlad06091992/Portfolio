@@ -4,6 +4,7 @@ import {Skill} from '../Skill/Skill';
 import css from '../../img/skills/css.svg'
 import api from '../../img/skills/api.svg'
 import js from '../../img/skills/js.svg'
+import vue from '../../img/skills/vue-3.svg'
 import ts from '../../img/skills/ts.svg'
 import redux from '../../img/skills/redux.svg'
 import react from '../../img/skills/react.svg'
@@ -14,6 +15,11 @@ let skillsProps = [{
     description: "Lorem ipsum",
     image: react,
     skillsList: ['Function components', 'Class components', 'HOC', 'React router DOM', 'Hooks']
+},{
+    title: "Vue",
+    description: "Lorem ipsum",
+    image: vue,
+    skillsList: ['Composition API', 'Pinia', 'Vue router']
 }, {
     title: "JS",
     decription: " dolores!",

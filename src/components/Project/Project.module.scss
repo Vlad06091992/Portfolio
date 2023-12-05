@@ -1,6 +1,7 @@
 .project {
   position: relative;
-  max-width: calc((100% /2) - 20px) ;
+  max-width: calc((100% /2) - 20px);
+  min-width: 485px;
   text-align: center;
   height: 100%;
   margin: 10px;
