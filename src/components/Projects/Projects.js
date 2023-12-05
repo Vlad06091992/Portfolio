@@ -23,7 +23,7 @@ let projectsProps = [
         linkToDeploy: 'https://online-shop-test-client.vercel.app/',
         description: `Тестовое задание на позицию fullstack разработчика`,
         figma: "https://www.figma.com/file/oWzPN2t2g0lmUG1jyTdYxL/%D0%A2%D0%B5%D1%81%D1%82%D0%BE%D0%B2%D0%BE%D0%B5-%D0%B7%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5-%2F-Fullstack-Web-Developer?node-id=0%3A1&mode=dev",
-        technologies: ["Localstorage", "Typescript", "React", "Mobx", "Tailwind CSS", "Axios", "React router dom V6", "Express(back)", "Vite", "SCSS", "Cors(Back)"],
+        technologies: ["Localstorage", "Typescript", "React", "Mobx", "Tailwind CSS", "Axios", "React router dom V6", "Express(Backend)", "Vite", "SCSS", "Cors(Backend)"],
     },
     {
         title: "Git Hunt",
@@ -85,7 +85,7 @@ let projectsProps = [
         linkFrontend: 'https://github.com/Vlad06091992/bloggers-platform-api',
         linkToDeploy: 'https://bloggers-platform-api.vercel.app/',
         description: "Backend приложение, разрабатываемое мною в целях изучения новых знаний и технологий. В настоящее время реализовано несколько роутов(блоги,посты,видео), используется 'Mondo DB Atlas' для хранения данных, базовая авторизация, написаны e2e тесты для роутов. Проект на этапе разработки",
-        technologies: ["Typescript", "Express","Express-validator","Express basic auth","MongoDB","Super test","dotenv","jest","nodemon",],
+        technologies: ["Typescript", "Express","Express-validator","Express basic auth","MongoDB","Super test","Dotenv","jest","nodemon",],
     },
     {
         title: "Pet projects native JS",
