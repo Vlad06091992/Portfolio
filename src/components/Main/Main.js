@@ -6,10 +6,7 @@ import Slide from "react-reveal/Slide";
 import {ReactComponent as Github} from "../../assets/socialMedia/github.svg";
 import {ReactComponent as Telegram} from "../../assets/socialMedia/telegram.svg";
 import {ReactComponent as Codewars} from "../../assets/socialMedia/codewars.svg";
-import {ReactComponent as CV} from "../../assets/socialMedia/cv.svg";
-import {ReactComponent as Linkedin} from "../../assets/socialMedia/linkedin.svg";
 import ReactTypingEffect from 'react-typing-effect';
-
 
 
 export const Main = () => {

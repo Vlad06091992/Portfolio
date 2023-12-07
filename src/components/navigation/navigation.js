@@ -13,21 +13,10 @@ export const Navigation = () => {
                   className={css.link}>
                 Projects
             </Link>
-            <Link activeClass={css.active} to="contacts" spy={true} smooth={true} offset={20} duration={500}
-                  className={css.link}>
-                Contacts
-            </Link>
-
-            {/*<a href={'#home'} className={css.active}>Home</a>*/}
-            {/*<a href={'#skills'}>Skills</a>*/}
-            {/*<a href={'#projects'}>Projects</a>*/}
-            {/*<a href={'#contacts'}>Contacts</a>*/}
+            {/*<Link activeClass={css.active} to="contacts" spy={true} smooth={true} offset={20} duration={500}*/}
+            {/*      className={css.link}>*/}
+            {/*    Contacts*/}
+            {/*</Link>*/}
         </div>
     )
 }
-
-
-// <Link activeClass={css.active} to="home" spy={true} smooth={true} offset={20} duration={500}
-//       className={css.link}>
-//     Home
-// </Link>
