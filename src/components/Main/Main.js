@@ -42,9 +42,9 @@ export const Main = () => {
                         <a target={'_blank'} href={'https://www.codewars.com/users/Vlad06091992'}>
                             <Codewars className={css.logo}/>
                         </a>
-                        <a target={'_blank'} href={'https://drive.google.com/file/d/12YoCv6BSrw9FSgJpg_pDwlYIqSjXZwrk/view'}>
-                            <CV className={css.logo}/>
-                        </a>
+                        {/*<a target={'_blank'} href={'https://drive.google.com/file/d/12YoCv6BSrw9FSgJpg_pDwlYIqSjXZwrk/view'}>*/}
+                        {/*    <CV className={css.logo}/>*/}
+                        {/*</a>*/}
 
                     </div>
                 </div>
