@@ -42,6 +42,7 @@ export const Project = (props) => {
 
             <div className={styles.description}>{props.description}</div>
             {props.figma &&    <a target={"_blank"} href={props.figma}>Ссылка на figma</a>}
+            {props.linkToTask &&    <a target={"_blank"} href={props.linkToTask}>Ссылка на задание(Github)</a>}
         </div>
 
     )

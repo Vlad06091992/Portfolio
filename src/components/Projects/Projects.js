@@ -5,6 +5,7 @@ import {Title} from "../../common/components/Title/Title";
 import todolist from '../../assets/projects/todolist.png'
 import todolistTest from '../../assets/projects/todolist-test.png'
 import onlineShop from '../../assets/projects/online-shop.png'
+import onlineShopTwo from '../../assets/projects/online-shop-2.png'
 import gitHunt from '../../assets/projects/git-hunt.png'
 import bloggers from '../../assets/projects/bloggers.png'
 import inventory from '../../assets/projects/inventory.png'
@@ -32,6 +33,16 @@ let projectsProps = [
         linkToDeploy: 'https://git-hunt-phi.vercel.app',
         description: "Проект для поиска пользователей на Github",
         technologies: ["Typescript", "Vue 3 composition API", "Pinia", "Vite", "Axios", "Element-plus", "SCSS"],
+
+    },
+    {
+        title: "Online shop",
+        image: onlineShopTwo,
+        linkToTask: "https://github.com/ITCase/react-test-task/tree/middle",
+        linkFrontend: 'https://github.com/Vlad06091992/ITCase_test_task_react',
+        linkToDeploy: 'https://it-case-test-task-react.vercel.app',
+        description: "Тестовое задание на позицию middle frontend разработчика. Мини интернет магазин",
+        technologies: ["Typescript", "React", "Mobx", "React router dom V6",'UUID',"React-toastify","SCSS"],
 
     },
     {
