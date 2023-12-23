@@ -12,17 +12,29 @@ import inventory from '../../assets/projects/inventory.png'
 import minicut from '../../assets/projects/minicut.png'
 import storybook from '../../assets/projects/storybook.png'
 import petProjects from '../../assets/projects/pet_projects.png'
+import flashcards from '../../assets/projects/flashcards.png'
 import Slide from "react-reveal/Slide";
 
 
 let projectsProps = [
+    {
+        title: "Flashcards/UI Kit",
+        image: flashcards,
+        linkFrontend: 'https://github.com/Vlad06091992/flashcards',
+        linkToDeploy: 'https://flashcards-eight-xi.vercel.app',
+        swagger: 'https://api.flashcards.andrii.es/docs',
+        linkToDeployStorybook: 'https://flashcards-nwweb3age-vlad06091992.vercel.app/?path=/story',
+        description: "Проект с карточками для запоминания новой информации(в разработке). В настоящий момент мною разработан собственный UI kit на основе Radix UI (в том числе на основе полиморфных компонентов), полный флоу авторизации,логинизации(JWT tokens), восстановление пароля,отображение карточек. Используется swagger для информации о бэкенд части приложения",
+        technologies: ["Typescript", "React", "React router dom V6", "Radix UI", , "Prettier", "ES-Lint", "React hook form", "ZOD", "Redux tool kit Query", "Storybook","Swagger","JWT tokens(refresh,access)"],
+        figma: 'https://www.figma.com/file/PwHkQjA62wyw8BSEyW4gIk/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5-%D0%BF%D0%BE-%D0%BA%D0%B0%D1%80%D1%82%D0%BE%D1%87%D0%BA%D0%B0%D0%BC?node-id=2-2378&t=FtEn06M2W26xiUEx-0'
+    },
     {
         title: "Online shop",
         image: onlineShop,
         linkFrontend: 'https://github.com/Vlad06091992/online-shop-test-client',
         linkBackend: 'https://github.com/Vlad06091992/online-shop-test-server',
         linkToDeploy: 'https://online-shop-test-client.vercel.app/',
-        description: `Тестовое задание на позицию fullstack разработчика`,
+        description: `Тестовое задание на позицию fullstack разработчика, мною реализована фронтенд и бэкенд часть согласно техзаданию` ,
         figma: "https://www.figma.com/file/oWzPN2t2g0lmUG1jyTdYxL/%D0%A2%D0%B5%D1%81%D1%82%D0%BE%D0%B2%D0%BE%D0%B5-%D0%B7%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5-%2F-Fullstack-Web-Developer?node-id=0%3A1&mode=dev",
         technologies: ["Localstorage", "Typescript", "React", "Mobx", "Tailwind CSS", "Axios", "React router dom V6", "Express(Backend)", "Vite", "SCSS", "Cors(Backend)"],
     },
@@ -49,20 +61,11 @@ let projectsProps = [
         title: "Tasks manager",
         image: todolist,
         linkFrontend: 'https://github.com/Vlad06091992/ToDoLIst-react-typescript',
+        linkToApi:'https://social-network.samuraijs.com/docs?type=todolist#auth',
         linkToDeploy: 'https://todo-cyan-alpha.vercel.app',
         description: "Проект для планирования задач, взаимодействует с внешним API",
         technologies: ["Typescript", "React", "Redux Tool Kit", "Axios", "Formik", "React router dom V6", "Storybook", "Material UI", "UUID"],
 
-    },
-    {
-        title: "Flashcards/UI Kit",
-        image: storybook,
-        linkFrontend: 'https://github.com/Vlad06091992/flashcards',
-        linkToDeploy: 'https://flashcards-eight-xi.vercel.app',
-        linkToDeployStorybook: 'https://flashcards-nwweb3age-vlad06091992.vercel.app/?path=/story',
-        description: "Проект с карточками для запоминания новой информации(в разработке). В настоящий момент мною пишется собственный UI kit на основе Radix UI, делаются компоненты форм на основе React Hook Form",
-        technologies: ["Typescript", "React", "React router dom V6", "Radix UI", , "Prettier", "ES-Lint", "React hook form", "ZOD", "Redux tool kit Query", "Storybook",],
-        figma: 'https://www.figma.com/file/PwHkQjA62wyw8BSEyW4gIk/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5-%D0%BF%D0%BE-%D0%BA%D0%B0%D1%80%D1%82%D0%BE%D1%87%D0%BA%D0%B0%D0%BC?node-id=2-2378&t=FtEn06M2W26xiUEx-0'
     },
     {
         title: "Infinite Todolist",

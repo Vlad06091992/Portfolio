@@ -9,21 +9,21 @@ export const Project = (props) => {
         <div className={styles.project}>
             <h3>{props.title}</h3>
             <div className={styles.linkButtons}>
-                {props.linkToDeploy &&  <div>
-                <a target={'_blank'} href={props.linkToDeploy}>
-                    <Button description={'Deployed Application'}></Button>
-                </a>
-            </div>}
-                {props.linkToDeployStorybook &&  <div>
+                {props.linkToDeploy && <div>
+                    <a target={'_blank'} href={props.linkToDeploy}>
+                        <Button description={'Deployed Application'}></Button>
+                    </a>
+                </div>}
+                {props.linkToDeployStorybook && <div>
                     <a target={'_blank'} href={props.linkToDeploy}>
                         <Button description={'Deployed storybook'}></Button>
                     </a>
                 </div>}
-            <div>
-                <a target={'_blank'} href={props.linkFrontend}>
-                    <Button description={'Link to Github'}></Button>
-                </a>
-            </div>
+                <div>
+                    <a target={'_blank'} href={props.linkFrontend}>
+                        <Button description={'Link to Github'}></Button>
+                    </a>
+                </div>
                 {props.linkBackend && <div>
                     <a target={'_blank'} href={props.linkBackend}>
                         <Button description={'Link to Github(backend)'}></Button>
@@ -46,8 +46,10 @@ export const Project = (props) => {
             </div>
 
             <div className={styles.description}>{props.description}</div>
-            {props.figma &&    <a target={"_blank"} href={props.figma}>Ссылка на figma</a>}
-            {props.linkToTask &&    <a target={"_blank"} href={props.linkToTask}>Ссылка на задание(Github)</a>}
+            {props.figma && <div><a target={"_blank"} href={props.figma}>Ссылка на figma</a></div>}
+            {props.swagger && <div><a target={"_blank"} href={props.swagger}>Ссылка на swagger</a></div>}
+            {props.linkToApi && <div><a target={"_blank"} href={props.linkToApi}>Ссылка на API(backend)</a></div>}
+            {props.linkToTask && <div><a target={"_blank"} href={props.linkToTask}>Ссылка на задание(Github)</a></div>}
         </div>
 
     )
