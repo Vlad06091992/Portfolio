@@ -58,7 +58,8 @@ let projectsProps = [
         title: "Flashcards/UI Kit",
         image: storybook,
         linkFrontend: 'https://github.com/Vlad06091992/flashcards',
-        linkToDeploy: 'https://flashcards-nwweb3age-vlad06091992.vercel.app/?path=/story',
+        linkToDeploy: 'https://flashcards-eight-xi.vercel.app',
+        linkToDeployStorybook: 'https://flashcards-nwweb3age-vlad06091992.vercel.app/?path=/story',
         description: "Проект с карточками для запоминания новой информации(в разработке). В настоящий момент мною пишется собственный UI kit на основе Radix UI, делаются компоненты форм на основе React Hook Form",
         technologies: ["Typescript", "React", "React router dom V6", "Radix UI", , "Prettier", "ES-Lint", "React hook form", "ZOD", "Redux tool kit Query", "Storybook",],
         figma: 'https://www.figma.com/file/PwHkQjA62wyw8BSEyW4gIk/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5-%D0%BF%D0%BE-%D0%BA%D0%B0%D1%80%D1%82%D0%BE%D1%87%D0%BA%D0%B0%D0%BC?node-id=2-2378&t=FtEn06M2W26xiUEx-0'

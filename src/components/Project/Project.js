@@ -14,6 +14,11 @@ export const Project = (props) => {
                     <Button description={'Deployed Application'}></Button>
                 </a>
             </div>}
+                {props.linkToDeployStorybook &&  <div>
+                    <a target={'_blank'} href={props.linkToDeploy}>
+                        <Button description={'Deployed storybook'}></Button>
+                    </a>
+                </div>}
             <div>
                 <a target={'_blank'} href={props.linkFrontend}>
                     <Button description={'Link to Github'}></Button>
