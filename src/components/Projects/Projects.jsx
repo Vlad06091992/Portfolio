@@ -13,6 +13,7 @@ import inventory from "../../assets/projects/inventory.png";
 import minicut from "../../assets/projects/minicut.png";
 import bloggers from "../../assets/projects/bloggers.png";
 import petProjects from "../../assets/projects/pet_projects.png";
+import {DebounceInput} from "../Debounced-input/DebouncedInput";
 
 const projects = [
     {
@@ -122,7 +123,6 @@ const projects = [
 export const Projects = () => {
     const [projectsState, setProjectsState] = useState(projects)
     const [inputValue, setInputValue] = React.useState("");
-    const [debouncedInputValue, setDebouncedInputValue] = useState("");
 
     const handleInputChange = (event) => {
         setInputValue(event.target.value.toLowerCase());
@@ -149,7 +149,7 @@ export const Projects = () => {
                 <option value={'fullstack'}>Fullstack</option>
                 <option value={'native'}>Native JS</option>
             </select>
-                <input value={inputValue} className={css.input} placeholder={'Поиск по технологиям'} onChange={handleInputChange}/>
+                <DebounceInput value={inputValue} className={css.input} onChange={setInputValue}/>
             </div>
 
             <Slide left>
