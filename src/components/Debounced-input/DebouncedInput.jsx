@@ -17,5 +17,5 @@ export const DebounceInput = (props) => {
         }, 700);
         return () => clearTimeout(timeoutId);
     }, [inputValue, props]);
-    return <input className={props.className} type="text" value={inputValue} onChange={handleInputChange} />;
+    return <input className={props.className} type="text" placeholder={props.placeholder} value={inputValue} onChange={handleInputChange} />;
 };

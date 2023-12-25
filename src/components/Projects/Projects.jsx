@@ -149,7 +149,7 @@ export const Projects = () => {
                 <option value={'fullstack'}>Fullstack</option>
                 <option value={'native'}>Native JS</option>
             </select>
-                <DebounceInput value={inputValue} className={css.input} onChange={setInputValue}/>
+                <DebounceInput value={inputValue} className={css.input} placeholder={'Введите технологию'} onChange={setInputValue}/>
             </div>
 
             <Slide left>
