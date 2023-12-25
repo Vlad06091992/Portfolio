@@ -3,12 +3,32 @@
 
 .projects {
   background-color: $projectsAndSkillsBgColor;
-
+min-height: 100vh;
   .container {
     @include flex(space-evenly, flex-start);
     @include container;
     height: 100%;
   }
+  .searchSettings{
+    width: 445px;
+    margin: 0 auto;
+  }
+
+  .notFoundResult{
+    margin-top: 30px;
+  }
+
+  .select{
+    padding: 2px 0;
+    margin-left: 5px;
+    border-radius: 2px;
+    border: 1px solid grey;
+  }
+
+  .input{
+    margin-left: 10px;
+  }
+
 }
 
 

@@ -12,7 +12,6 @@ import ReactTypingEffect from 'react-typing-effect';
 export const Main = () => {
     return (
         <div className={css.main}>
-
             <Particle/>
             <Slide>
             <div className={css.container}>

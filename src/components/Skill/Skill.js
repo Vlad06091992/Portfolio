@@ -10,12 +10,7 @@ export const Skill = (props) => {
             <img className={css.image} src={props.image}/>
             <h3>{props.title}</h3>
             {/*<div className={css.description}>{props.description}</div>*/}
-        <ul>{props.skillsList.map(el => {
-// debugger
-            return (<li>{el}</li>)
-        })
-        }
-        </ul>
+        <ul>{props.skillsList.map(el => <li key={el}>{el}</li>) }</ul>
         </div>
 
     )
