@@ -106,6 +106,7 @@ const projects = [
         type: ['backend'],
         title: "Bloggers Platform API",
         image: bloggers,
+        mySwaggerLink: 'https://bloggers-platform-api.vercel.app/docs/',
         linkFrontend: 'https://github.com/Vlad06091992/bloggers-platform-api',
         linkToDeploy: 'https://bloggers-platform-api.vercel.app/',
         description: "Backend приложение, разрабатываемое мною в целях изучения новых знаний и технологий. В настоящее время реализовано несколько роутов(блоги,посты,видео), используется 'Mondo DB Atlas' для хранения данных, базовая авторизация, написаны e2e тесты для роутов. Проект на этапе разработки",
