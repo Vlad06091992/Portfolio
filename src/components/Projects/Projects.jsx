@@ -156,7 +156,7 @@ export const Projects = () => {
                     <DebounceInput value={inputValue} className={css.input} placeholder={'Введите технологию'}
                                    onChange={setInputValue}/>}
                 {!isDesktopOrLaptop &&
-                    <input value={inputValue} className={css.input} placeholder={'Введите технологию'}
+                    <input value={inputValue} defaultValue={''}  type={'text'} className={css.input} placeholder={'Введите технологию'}
                            onChange={(event) => {
                                setInputValue(event.target.value)}}/> }
             </div>
