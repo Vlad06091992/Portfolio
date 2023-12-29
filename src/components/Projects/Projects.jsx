@@ -159,7 +159,7 @@ export const Projects = () => {
                 {!isDesktopOrLaptop &&
                     <input value={inputValue} defaultValue={''}  type={'text'} className={css.input} placeholder={'Введите технологию'}
                            onChange={(event) => {
-                               setInputValue(event.target.value)}}/> }
+                               setInputValue(event.target.value.toString())}}/> }
             </div>
 
             {isDesktopOrLaptop && <Slide left>
