@@ -1,5 +1,5 @@
 import css from './Projects.module.scss'
-import  {useState} from 'react';
+import React, {useState} from 'react';
 import {Project} from '../Project/Project'
 import {Title} from "../../common/components/Title/Title";
 import Slide from "react-reveal/Slide";
@@ -36,7 +36,7 @@ const projects = [
         linkFrontend: 'https://github.com/Vlad06091992/online-shop-test-client',
         linkBackend: 'https://github.com/Vlad06091992/online-shop-test-server',
         linkToDeploy: 'https://online-shop-test-client.vercel.app/',
-        mySwaggerLink: 'https://online-shop-test-server.vercel.app/docs',
+        mySwaggerLink: 'https://online-shop-test-server.vercel.app/yarn/docs',
         description: `Тестовое задание на позицию fullstack разработчика, мною реализована фронтенд и бэкенд часть согласно техзаданию`,
         figma: "https://www.figma.com/file/oWzPN2t2g0lmUG1jyTdYxL/%D0%A2%D0%B5%D1%81%D1%82%D0%BE%D0%B2%D0%BE%D0%B5-%D0%B7%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5-%2F-Fullstack-Web-Developer?node-id=0%3A1&mode=dev",
         technologies: ["Localstorage", "Typescript", "React", "Mobx", "Tailwind CSS", "Axios", "React router dom V6", "Express(Backend)", "Vite", "SCSS", "Cors(Backend)"],
@@ -107,7 +107,7 @@ const projects = [
         type: ['backend'],
         title: "Bloggers Platform API",
         image: bloggers,
-        mySwaggerLink: 'https://bloggers-platform-api.vercel.app/docs',
+        mySwaggerLink: 'https://bloggers-platform-api.vercel.app/docs/',
         linkFrontend: 'https://github.com/Vlad06091992/bloggers-platform-api',
         linkToDeploy: 'https://bloggers-platform-api.vercel.app/',
         description: "Backend приложение, разрабатываемое мною в целях изучения новых знаний и технологий. В настоящее время реализовано несколько роутов(блоги,посты,видео), используется 'Mondo DB Atlas' для хранения данных, базовая авторизация, написаны e2e тесты для роутов. Проект на этапе разработки",
@@ -125,7 +125,7 @@ const projects = [
 
 export const Projects = () => {
     const [projectsState, setProjectsState] = useState(projects)
-    const [inputValue, setInputValue] = useState("");
+    const [inputValue, setInputValue] = React.useState("");
 
     const isDesktopOrLaptop = useMediaQuery({query: '(min-width: 1224px)'});
 
@@ -133,9 +133,8 @@ export const Projects = () => {
 
     let findedItems = projectsState.filter(el =>
         el.technologies.some(t => t.toLowerCase().includes(inputValue.toLowerCase()))
-    ).map((el, index) => <Project key={el.title} {...el}/>);
+    ).map((el) => <Project key={el.title} {...el}/>);
     return (<div id={'projects'} className={css.projects}>
-            <div style={{margin:"auto", width:'200px'}}>{inputValue}</div>
             <Title title={"My projects"}/>
             <div className={css.searchSettings}>
                 <span>Выберите направление </span> <select className={css.select} onChange={event => {
@@ -149,18 +148,13 @@ export const Projects = () => {
                 <option value={'fullstack'}>Fullstack</option>
                 <option value={'native'}>Native JS</option>
             </select>
-                {isDesktopOrLaptop &&
-                    <DebounceInput value={inputValue} className={css.input} placeholder={'Введите технологию'}
-                                   onChange={setInputValue}/>}
-                {!isDesktopOrLaptop &&
-                    <textarea value={inputValue} defaultValue={''}  type={'text'} className={css.input} placeholder={'Введите технологию'}
-                           onInput={(event) => {
-                               setInputValue(event.target.value.toString())}}/> }
+                <DebounceInput value={inputValue} className={css.input} placeholder={'Введите технологию'}
+                                   onChange={setInputValue}/>
             </div>
 
             {isDesktopOrLaptop && <Slide left>
                 <div className={css.container}>
-                    {findedItems.length < 1 &&
+                    {!findedItems.length &&
                         <div className={css.notFoundResult}>К сожалению проекты с такими параметрами не нашлись
                             :(</div>}
                     {findedItems}
