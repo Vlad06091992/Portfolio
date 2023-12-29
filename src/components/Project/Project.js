@@ -31,7 +31,7 @@ export const Project = (props) => {
                 </div>}
             </div>
             <div className={styles.main}>
-                <div>
+                <div style={{width:'100%'}}>
                     <img alt={'project'} className={styles.image} src={props.image}></img>
                 </div>
                 <div>

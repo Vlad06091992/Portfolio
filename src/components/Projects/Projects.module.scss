@@ -9,12 +9,16 @@
     @include flex(space-evenly, flex-start);
     @include container;
     height: 100%;
+    @media screen and (max-width: 550px) {
+    display: block;
+      margin: 0 10px;
+    }
   }
 
   .searchSettings {
     max-width: 465px;
     margin: 0 auto;
-    @media screen and (max-width: 475px) {
+    @media screen and (max-width: 550px) {
       text-align: center;
       padding: 10px;
       margin: 0;
