@@ -164,7 +164,7 @@ export const Projects = () => {
 
             {isDesktopOrLaptop && <Slide left>
                 <div className={css.container}>
-                    {!findedItems.length &&
+                    {findedItems.length < 1 &&
                         <div className={css.notFoundResult}>К сожалению проекты с такими параметрами не нашлись
                             :(</div>}
                     {findedItems}
