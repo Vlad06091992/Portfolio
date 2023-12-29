@@ -35,7 +35,7 @@ const projects = [
         linkFrontend: 'https://github.com/Vlad06091992/online-shop-test-client',
         linkBackend: 'https://github.com/Vlad06091992/online-shop-test-server',
         linkToDeploy: 'https://online-shop-test-client.vercel.app/',
-        mySwaggerLink:'https://online-shop-test-server.vercel.app//docs',
+        mySwaggerLink:'https://online-shop-test-server.vercel.app/yarn/docs',
         description: `Тестовое задание на позицию fullstack разработчика, мною реализована фронтенд и бэкенд часть согласно техзаданию`,
         figma: "https://www.figma.com/file/oWzPN2t2g0lmUG1jyTdYxL/%D0%A2%D0%B5%D1%81%D1%82%D0%BE%D0%B2%D0%BE%D0%B5-%D0%B7%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5-%2F-Fullstack-Web-Developer?node-id=0%3A1&mode=dev",
         technologies: ["Localstorage", "Typescript", "React", "Mobx", "Tailwind CSS", "Axios", "React router dom V6", "Express(Backend)", "Vite", "SCSS", "Cors(Backend)"],
@@ -126,9 +126,6 @@ export const Projects = () => {
     const [projectsState, setProjectsState] = useState(projects)
     const [inputValue, setInputValue] = React.useState("");
 
-    const handleInputChange = (event) => {
-        setInputValue(event.target.value.toLowerCase());
-    };
 
     let findedItems = projectsState.filter(el => {
         let res = false
