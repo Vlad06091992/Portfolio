@@ -125,7 +125,7 @@ const projects = [
 
 export const Projects = () => {
     const [projectsState, setProjectsState] = useState(projects)
-    const [inputValue, setInputValue] = React.useState("");
+    const [inputValue, setInputValue] = useState("");
 
     const isDesktopOrLaptop = useMediaQuery({query: '(min-width: 1224px)'});
 
