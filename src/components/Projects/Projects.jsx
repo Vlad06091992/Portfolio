@@ -1,5 +1,5 @@
 import css from './Projects.module.scss'
-import React, {useState} from 'react';
+import  {useState} from 'react';
 import {Project} from '../Project/Project'
 import {Title} from "../../common/components/Title/Title";
 import Slide from "react-reveal/Slide";
@@ -158,7 +158,7 @@ export const Projects = () => {
                                    onChange={setInputValue}/>}
                 {!isDesktopOrLaptop &&
                     <input value={inputValue} defaultValue={''}  type={'text'} className={css.input} placeholder={'Введите технологию'}
-                           onChange={(event) => {
+                           onInput={(event) => {
                                setInputValue(event.target.value.toString())}}/> }
             </div>
 
