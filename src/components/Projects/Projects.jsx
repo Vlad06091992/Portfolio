@@ -131,13 +131,9 @@ export const Projects = () => {
 
     console.log(isDesktopOrLaptop)
 
-    let findedItems = projectsState.filter(el => {
-        let res = false
-        el.technologies.forEach((t) => {
-            if (t.toLowerCase().indexOf(inputValue) > -1) res = true
-        })
-        return res
-    }).map((el, index) => <Project key={el.title} {...el}/>);
+    let findedItems = projectsState.filter(el =>
+        el.technologies.some(t => t.toLowerCase().includes(inputValue.toLowerCase()))
+    ).map((el, index) => <Project key={el.title} {...el}/>);
     return (<div id={'projects'} className={css.projects}>
             <div style={{margin:"auto", width:'200px'}}>{inputValue}</div>
             <Title title={"My projects"}/>
