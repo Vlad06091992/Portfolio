@@ -139,6 +139,7 @@ export const Projects = () => {
         return res
     }).map((el, index) => <Project key={el.title} {...el}/>);
     return (<div id={'projects'} className={css.projects}>
+            <div style={{margin:"auto", width:'200px'}}>{inputValue}</div>
             <Title title={"My projects"}/>
             <div className={css.searchSettings}>
                 <span>Выберите направление </span> <select className={css.select} onChange={event => {
