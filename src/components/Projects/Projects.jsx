@@ -89,7 +89,7 @@ const projects = [
         title: "Inventory of items",
         image: inventory,
         linkFrontend: 'https://github.com/Vlad06091992/vue-test-task',
-        linkToDeploy: 'https://vue-test-task-i7jpavxi7-vlad06091992.vercel.app',
+        linkToDeploy: 'https://vue-test-task-seven.vercel.app/',
         description: "Тестовое задание на позицию frontend разработчика. Представляет собой инвентарь с предметами, с возможность перетаскивания(drag and drop без сторонних библиотек), удаления. Также есть меню с подробной информацией",
         technologies: ["Typescript", "Vue 3 composition API", "Pinia", "Vite", "Localstorage", "SCSS"],
         figma: "https://www.figma.com/file/ziQM2VcgY1D7UnX937cSEO/Vue-Test-Task?node-id=0%3A1&mode=dev"
