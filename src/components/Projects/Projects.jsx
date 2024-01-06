@@ -4,6 +4,7 @@ import {Project} from '../Project/Project'
 import {Title} from "../../common/components/Title/Title";
 import Slide from "react-reveal/Slide";
 import flashcards from "../../assets/projects/flashcards.png";
+import onlyTestTask from "../../assets/projects/only-test-task.png";
 import onlineShop from "../../assets/projects/online-shop.png";
 import gitHunt from "../../assets/projects/git-hunt.png";
 import onlineShopTwo from "../../assets/projects/online-shop-2.png";
@@ -28,6 +29,17 @@ const projects = [
         description: "Проект с карточками для запоминания новой информации(в разработке). В настоящий момент мною разработан собственный UI kit на основе Radix UI (в том числе на основе полиморфных компонентов), полный флоу авторизации,логинизации(JWT tokens), восстановление пароля,отображение карточек. Используется swagger для информации о бэкенд части приложения",
         technologies: ["Typescript", "React", "React router dom V6", "Radix UI", , "Prettier", "ES-Lint", "React hook form", "ZOD", "Redux tool kit Query", "Storybook", "Swagger", "JWT tokens(refresh,access)", "Vite"],
         figma: 'https://www.figma.com/file/PwHkQjA62wyw8BSEyW4gIk/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5-%D0%BF%D0%BE-%D0%BA%D0%B0%D1%80%D1%82%D0%BE%D1%87%D0%BA%D0%B0%D0%BC?node-id=2-2378&t=FtEn06M2W26xiUEx-0'
+    },
+    {
+        type: ['frontend'],
+        title: "World Chronicle",
+        image: onlyTestTask,
+        linkFrontend: 'https://github.com/Vlad06091992/test-task-only',
+        linkToDeploy: 'https://test-task-only-five.vercel.app',
+        description: `Тестовое задание на позицию middle-frontend разработчика, представляет собой приложение, которое показывает историю о событиях в мире(технологии, космос, кино и т.д.). Реализована десктопная и мобильная(320px) версия в соответствии с макетом. 
+        Задание примечательно тем, что нашлось практическое применение хукам useLayoutEffect, useRef для работы с анимациями, используются кастомные кнопки и стили для Swiper`,
+        figma: "https://www.figma.com/file/YXCbNT4Jf9INk62BKTZw1z/%D0%A2%D0%B5%D1%81%D1%82%D0%BE%D0%B2%D0%BE%D0%B5-%D0%B7%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5?mode=dev",
+        technologies: ["Typescript", "React","GSAP","Motion frame","Swiper","React responsive","SCSS"],
     },
     {
         type: ['fullstack', 'frontend', 'backend'],
