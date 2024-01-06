@@ -39,7 +39,7 @@ const projects = [
         description: `Тестовое задание на позицию middle-frontend разработчика, представляет собой приложение, которое показывает историю о событиях в мире(технологии, космос, кино и т.д.). Реализована десктопная и мобильная(320px) версия в соответствии с макетом. 
         Задание примечательно тем, что нашлось практическое применение хукам useLayoutEffect, useRef для работы с анимациями, используются кастомные кнопки и стили для Swiper`,
         figma: "https://www.figma.com/file/YXCbNT4Jf9INk62BKTZw1z/%D0%A2%D0%B5%D1%81%D1%82%D0%BE%D0%B2%D0%BE%D0%B5-%D0%B7%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5?mode=dev",
-        technologies: ["Typescript", "React","GSAP","Motion frame","Swiper","React responsive","SCSS"],
+        technologies: ["Typescript", "React","GSAP","Motion frame","Swiper","React responsive","SCSS","Webpack"],
     },
     {
         type: ['fullstack', 'frontend', 'backend'],
