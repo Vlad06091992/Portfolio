@@ -6,18 +6,20 @@ import {Projects} from './components/Projects/Projects';
 import {Footer} from './components/Footer/Footer';
 import ScrollToTop from "react-scroll-to-top";
 import React from "react";
+import {Analytics} from '@vercel/analytics/react';
 
 
 export function App() {
     return (
         <div id={'home'} className="App">
+            <Analytics/>
             <Header/>
             <Main/>
             <Projects/>
             <Skills/>
             {/*<Contacts/>*/}
             <Footer/>
-            <ScrollToTop smooth color="#44CBE1" />
+            <ScrollToTop smooth color="#44CBE1"/>
         </div>
     );
 }

@@ -164,22 +164,14 @@ export const Projects = () => {
                                    onChange={setInputValue}/>
             </div>
 
-            {isDesktopOrLaptop && <Slide left>
+
                 <div className={css.container}>
                     {!findedItems.length &&
                         <div className={css.notFoundResult}>К сожалению проекты с такими параметрами не нашлись
                             :(</div>}
                     {findedItems}
                 </div>
-            </Slide>}
-            {!isDesktopOrLaptop &&
-                <div className={css.container}>
-                    {!findedItems.length &&
-                        <div className={css.notFoundResult}>К сожалению проекты с такими параметрами не нашлись
-                            :(</div>}
-                    {findedItems}
-                </div>
-            }
+
         </div>
     )
 }

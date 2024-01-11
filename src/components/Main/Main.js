@@ -14,37 +14,39 @@ export const Main = () => {
         <div className={css.main}>
             <Particle/>
             <Slide>
-            <div className={css.container}>
-               <div className={css.ava}>
-                   <img  alt='ava' src={photo} />
+                <div className={css.container}>
+                    <div className={css.ava}>
+                        <img alt='ava' src={photo}/>
 
-               </div>
-
-                <div className={css.text}>
-                    <h2>Hello There, I'm</h2>
-                    <div className={css.name}>
-                        <div>Vladislav</div>
-                        <div className={css.lastname}>Smirnov</div>
                     </div>
-<p>A programmer who loves coding in <ReactTypingEffect speed={100} text={["React", "Javascript", "Typescript"]}/></p>
-                    <div className={css.socialMedia}>
-                        <div className={css.stripe}></div>
-                        <a target={'_blank'} href={'https://github.com/Vlad06091992'}>
-                            <Github className={css.logo}/>
-                        </a>
-                        <a target={'_blank'} href={'https://t.me/Vlad_VS92'}>
-                            <Telegram className={css.logo}/>
-                        </a>
-                        <a target={'_blank'} href={'https://www.codewars.com/users/Vlad06091992'}>
-                            <Codewars className={css.logo}/>
-                        </a>
-                        {/*<a target={'_blank'} href={'https://drive.google.com/file/d/12YoCv6BSrw9FSgJpg_pDwlYIqSjXZwrk/view'}>*/}
-                        {/*    <CV className={css.logo}/>*/}
-                        {/*</a>*/}
 
+                    <div className={css.text}>
+                        <h2>Hello There, I'm</h2>
+                        <div className={css.name}>
+                            <div>Vladislav</div>
+                            <div className={css.lastname}>Smirnov</div>
+                        </div>
+                        <p>A programmer who loves coding in <ReactTypingEffect speed={100}
+                                                                               text={["React", "Javascript", "Typescript"]}/>
+                        </p>
+                        <div className={css.socialMedia}>
+                            <div className={css.stripe}></div>
+                            <a target={'_blank'} href={'https://github.com/Vlad06091992'}>
+                                <Github className={css.logo}/>
+                            </a>
+                            <a target={'_blank'} href={'https://t.me/Vlad_VS92'}>
+                                <Telegram className={css.logo}/>
+                            </a>
+                            <a target={'_blank'} href={'https://www.codewars.com/users/Vlad06091992'}>
+                                <Codewars className={css.logo}/>
+                            </a>
+                            {/*<a target={'_blank'} href={'https://drive.google.com/file/d/12YoCv6BSrw9FSgJpg_pDwlYIqSjXZwrk/view'}>*/}
+                            {/*    <CV className={css.logo}/>*/}
+                            {/*</a>*/}
+
+                        </div>
                     </div>
                 </div>
-            </div>
 
             </Slide>
         </div>
