@@ -15,7 +15,7 @@ export const Project = (props) => {
                     </a>
                 </div>}
                 {props.linkToDeployStorybook && <div>
-                    <a target={'_blank'} href={props.linkToDeploy} rel="noreferrer">
+                    <a target={'_blank'} href={props.linkToDeployStorybook} rel="noreferrer">
                         <Button description={'Deployed storybook'}></Button>
                     </a>
                 </div>}
@@ -51,6 +51,7 @@ export const Project = (props) => {
             {props.mySwaggerLink && <div><a target={"_blank"} href={props.mySwaggerLink} rel="noreferrer">Ссылка на swagger(реализованный мною backend)</a></div>}
             {props.linkToApi && <div><a target={"_blank"} href={props.linkToApi} rel="noreferrer">Ссылка на API(backend)</a></div>}
             {props.linkToTask && <div><a target={"_blank"} href={props.linkToTask} rel="noreferrer">Ссылка на задание(Github)</a></div>}
+            {props.linkToTaskFile && <div><a target={"_blank"} href={props.linkToTaskFile} rel="noreferrer">Ссылка на файл с заданием</a></div>}
         </div>
 
     )

@@ -14,6 +14,7 @@ import inventory from "../../assets/projects/inventory.png";
 import minicut from "../../assets/projects/minicut.png";
 import bloggers from "../../assets/projects/bloggers.png";
 import petProjects from "../../assets/projects/pet_projects.png";
+import calendar from "../../assets/projects/calendar.png";
 import {DebounceInput} from "../Debounced-input/DebouncedInput";
 import {useMediaQuery} from 'react-responsive';
 
@@ -25,7 +26,7 @@ const projects = [
         linkFrontend: 'https://github.com/Vlad06091992/flashcards',
         linkToDeploy: 'https://flashcards-eight-xi.vercel.app',
         swagger: 'https://api.flashcards.andrii.es/docs',
-        linkToDeployStorybook: 'https://flashcards-nwweb3age-vlad06091992.vercel.app/?path=/story',
+        linkToDeployStorybook: 'https://storybook-my-flashcards-example-project.vercel.app',
         description: "Проект с карточками для запоминания новой информации(в разработке). В настоящий момент мною разработан собственный UI kit на основе Radix UI (в том числе на основе полиморфных компонентов), полный флоу авторизации,логинизации(JWT tokens), восстановление пароля,отображение карточек. Используется swagger для информации о бэкенд части приложения",
         technologies: ["Typescript", "React", "React router dom V6", "Radix UI", , "Prettier", "ES-Lint", "React hook form", "ZOD", "Redux tool kit Query", "Storybook", "Swagger", "JWT tokens(refresh,access)", "Vite"],
         figma: 'https://www.figma.com/file/PwHkQjA62wyw8BSEyW4gIk/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5-%D0%BF%D0%BE-%D0%BA%D0%B0%D1%80%D1%82%D0%BE%D1%87%D0%BA%D0%B0%D0%BC?node-id=2-2378&t=FtEn06M2W26xiUEx-0'
@@ -52,6 +53,16 @@ const projects = [
         description: `Тестовое задание на позицию fullstack разработчика, мною реализована фронтенд и бэкенд часть согласно техзаданию`,
         figma: "https://www.figma.com/file/oWzPN2t2g0lmUG1jyTdYxL/%D0%A2%D0%B5%D1%81%D1%82%D0%BE%D0%B2%D0%BE%D0%B5-%D0%B7%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5-%2F-Fullstack-Web-Developer?node-id=0%3A1&mode=dev",
         technologies: ["Localstorage", "Typescript", "React", "Mobx", "Tailwind CSS", "Axios", "React router dom V6", "Express(Backend)", "Vite", "SCSS", "Cors(Backend)","Swagger"],
+    },
+    {
+        type: ['frontend','native'],
+        title: "Event calendar",
+        image: calendar,
+        linkFrontend: 'https://github.com/Vlad06091992/test-task-geography-turs',
+        linkToDeploy: 'https://vlad06091992.github.io/test-task-geography-turs/',
+        description: "Тестовое задание на позицию frontend разработчика. Необходимо реализовать календарь с возможностью добавления и поиска событий по дате, автору, или названию события. Важное условие - не использовать никаких js,css библиотек ",
+        technologies: ["HTML","CSS","JS"],
+        linkToTaskFile: "https://cloud.mail.ru/public/aUfm/H7r1FS6fs"
     },
     {
         type: ['frontend'],
@@ -163,15 +174,12 @@ export const Projects = () => {
                 <DebounceInput value={inputValue} className={css.input} placeholder={'Введите технологию'}
                                    onChange={setInputValue}/>
             </div>
-
-
-                <div className={css.container}>
+            <div className={css.container}>
                     {!findedItems.length &&
                         <div className={css.notFoundResult}>К сожалению проекты с такими параметрами не нашлись
                             :(</div>}
                     {findedItems}
                 </div>
-
         </div>
     )
 }
