@@ -6,6 +6,7 @@ import Slide from "react-reveal/Slide";
 import {ReactComponent as Github} from "../../assets/socialMedia/github.svg";
 import {ReactComponent as Telegram} from "../../assets/socialMedia/telegram.svg";
 import {ReactComponent as Codewars} from "../../assets/socialMedia/codewars.svg";
+import {ReactComponent as CV} from "../../assets/socialMedia/cv.svg";
 import ReactTypingEffect from 'react-typing-effect';
 
 
@@ -40,9 +41,9 @@ export const Main = () => {
                             <a target={'_blank'} href={'https://www.codewars.com/users/Vlad06091992'}>
                                 <Codewars className={css.logo}/>
                             </a>
-                            {/*<a target={'_blank'} href={'https://drive.google.com/file/d/12YoCv6BSrw9FSgJpg_pDwlYIqSjXZwrk/view'}>*/}
-                            {/*    <CV className={css.logo}/>*/}
-                            {/*</a>*/}
+                            <a target={'_blank'} href={'https://cloud.mail.ru/public/Q7FK/3RY9cqAvy'}>
+                                <CV className={css.logo}/>
+                            </a>
 
                         </div>
                     </div>
