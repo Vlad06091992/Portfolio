@@ -60,7 +60,7 @@ const projects = [
         image: calendar,
         linkFrontend: 'https://github.com/Vlad06091992/test-task-geography-turs',
         linkToDeploy: 'https://vlad06091992.github.io/test-task-geography-turs/',
-        description: "Тестовое задание на позицию frontend разработчика. Необходимо реализовать календарь с возможностью добавления и поиска событий по дате, автору, или названию события. Важное условие - не использовать никаких js,css библиотек ",
+        description: `Тестовое задание на позицию middle-frontend разработчика, необходимо реализовать календарь с возможностью добавления и поиска событий по дате, автору, или названию события. Важное условие - не использовать никаких js,css библиотек`,
         technologies: ["HTML","CSS","JS"],
         linkToTaskFile: "https://cloud.mail.ru/public/aUfm/H7r1FS6fs"
     },
