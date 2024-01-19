@@ -15,6 +15,7 @@ import minicut from "../../assets/projects/minicut.png";
 import bloggers from "../../assets/projects/bloggers.png";
 import petProjects from "../../assets/projects/pet_projects.png";
 import calendar from "../../assets/projects/calendar.png";
+import personageFinder from "../../assets/projects/personage-finder.png";
 import {DebounceInput} from "../Debounced-input/DebouncedInput";
 import {useMediaQuery} from 'react-responsive';
 
@@ -63,6 +64,17 @@ const projects = [
         description: `Тестовое задание на позицию middle-frontend разработчика, необходимо реализовать календарь с возможностью добавления и поиска событий по дате, автору, или названию события. Важное условие - не использовать никаких js,css библиотек`,
         technologies: ["HTML","CSS","JS"],
         linkToTaskFile: "https://cloud.mail.ru/public/aUfm/H7r1FS6fs"
+    },
+    {
+        type: ['frontend'],
+        title: "Personage finder",
+        image: personageFinder,
+        linkFrontend: 'https://github.com/Vlad06091992/test-task-lotus',
+        linkToDeploy: 'https://test-task-lotus-x89a.vercel.app/',
+        description: `Тестовое задание на позицию junior-frontend разработчика, необходимо реализовать небольшое приложение для поиска персонажа с помощью API swapi dev. Основное требование к заданию - реализовать приложение на классовых компонентах React`,
+        linkToTask: "https://github.com/Lotus-uems-front/tz_lotus",
+        technologies: ["React","Axios","Typescript","React class components"],
+
     },
     {
         type: ['frontend'],
